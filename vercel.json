@@ -20,6 +20,11 @@
       "source": "/quote.html",
       "destination": "/quote",
       "permanent": true
+    },
+    {
+      "source": "/merci.html",
+      "destination": "/merci",
+      "permanent": true
     }
   ]
 }

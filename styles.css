@@ -819,6 +819,11 @@ textarea {
   gap: 8px;
 }
 
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
 .field.full {
   grid-column: 1 / -1;
 }
@@ -927,6 +932,12 @@ textarea {
   border: 2px solid #000;
   padding: 22px;
   background: var(--white);
+}
+
+.thank-you-page {
+  display: grid;
+  min-height: 62vh;
+  align-items: center;
 }
 
 @media (max-width: 920px) {
