@@ -1,0 +1,20 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/portfolio.html",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/process.html",
+      "destination": "/process",
+      "permanent": true
+    },
+    {
+      "source": "/quote.html",
+      "destination": "/quote",
+      "permanent": true
+    }
+  ]
+}

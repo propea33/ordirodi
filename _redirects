@@ -1,0 +1,7 @@
+/portfolio.html /portfolio 301!
+/process.html /process 301!
+/quote.html /quote 301!
+
+/portfolio /portfolio.html 200
+/process /process.html 200
+/quote /quote.html 200
