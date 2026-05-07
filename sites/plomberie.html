@@ -104,6 +104,21 @@
         .plumbing-accent { color: #0056b3; }
         .plumbing-bg { background-color: #0056b3; }
         .plumbing-border { border-color: #0056b3; }
+        .plumbing-hero-surface {
+            background:
+                linear-gradient(135deg, rgba(0, 86, 179, 0.12) 0%, rgba(249, 249, 249, 0) 48%),
+                radial-gradient(circle at 85% 18%, rgba(0, 86, 179, 0.16), transparent 34%),
+                #f9f9f9;
+        }
+        .plumbing-hero-surface::after {
+            position: absolute;
+            inset: auto -8rem -10rem auto;
+            width: 28rem;
+            height: 28rem;
+            border: 2rem solid rgba(0, 86, 179, 0.08);
+            border-radius: 9999px;
+            content: "";
+        }
     </style>
 <style>
     body {
@@ -124,11 +139,7 @@
 </header>
 <main class="pt-20">
 <!-- Hero Section -->
-<section class="relative min-h-[707px] flex flex-col justify-center px-margin-mobile md:px-margin-desktop overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-20 filter grayscale" data-alt="A professional plumber in a clean blue uniform working meticulously on high-end chrome pipes in a bright, modern minimalist bathroom. The scene is flooded with natural daylight, emphasizing a high-precision, trustworthy atmosphere with sharp focus and clean white surroundings. The overall aesthetic is one of corporate efficiency and technical expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC06zaA2moxH7sjMFuzZmKeqCt613N5Ehq_DIDGkVp1_ucw7svBrE_6DhDPAf7-ssQZ3oB45yRXLzRdVYyeqbQzj-iXc9mDqlMzQF3AU-cN8dGqqP7RLwRbuGt7DWu_83wocFPUCKYALzE1PkJQ-jkZZgiaIVrlSWdkSnmphG0skLqhuCrsIuULpMbvWqlQkFlKUJhL79oJtn8mEJ3AN4W9LyOJ-7ECBlfEGgDTmp4RFI81lgi_zDdWbzA_L6t6K4HBOYwigr3yJw"/>
-<div class="absolute inset-0 bg-gradient-to-r from-surface to-transparent"></div>
-</div>
+<section class="plumbing-hero-surface relative min-h-[707px] flex flex-col justify-center px-margin-mobile md:px-margin-desktop overflow-hidden">
 <div class="relative z-10 max-w-2xl">
 <div class="inline-flex items-center gap-2 mb-stack-sm bg-secondary-container px-3 py-1 rounded-full">
 <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
@@ -268,35 +279,6 @@
 </div>
 </section>
 </main>
-<!-- NavigationDrawer (Mobile Focus Only - Top tab hidden by shell logic but shown here as requested by component guide) -->
-<nav class="hidden md:flex flex-col fixed left-0 top-0 h-full w-80 p-6 bg-white dark:bg-zinc-950 border-r border-zinc-100 dark:border-zinc-900 shadow-2xl z-[60]">
-<div class="mb-10 flex items-center gap-2">
-<span class="material-symbols-outlined text-lg font-bold text-zinc-900 dark:text-zinc-50" data-icon="grid_view">grid_view</span>
-<span class="text-lg font-bold text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Industry Showcase</span>
-</div>
-<div class="space-y-2">
-<a class="flex items-center gap-4 p-4 rounded-lg bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 font-bold transition-colors duration-200 ease-in" href="#">
-<span class="material-symbols-outlined" data-icon="plumbing">plumbing</span>
-<span class="font-['Space_Grotesk'] text-sm font-medium">Plumbing</span>
-</a>
-<a class="flex items-center gap-4 p-4 rounded-lg text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200 ease-in" href="#">
-<span class="material-symbols-outlined" data-icon="grass">grass</span>
-<span class="font-['Space_Grotesk'] text-sm font-medium">Lawn Care</span>
-</a>
-<a class="flex items-center gap-4 p-4 rounded-lg text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200 ease-in" href="#">
-<span class="material-symbols-outlined" data-icon="home">home</span>
-<span class="font-['Space_Grotesk'] text-sm font-medium">Real Estate</span>
-</a>
-<a class="flex items-center gap-4 p-4 rounded-lg text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200 ease-in" href="#">
-<span class="material-symbols-outlined" data-icon="handyman">handyman</span>
-<span class="font-['Space_Grotesk'] text-sm font-medium">Cabinetry</span>
-</a>
-<a class="flex items-center gap-4 p-4 rounded-lg text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200 ease-in" href="#">
-<span class="material-symbols-outlined" data-icon="tire_repair">tire_repair</span>
-<span class="font-['Space_Grotesk'] text-sm font-medium">Tire Shop</span>
-</a>
-</div>
-</nav>
 <!-- FAB for Emergency -->
 <div class="fixed bottom-8 right-8 z-[100] md:hidden">
 <button class="bg-primary text-on-primary w-16 h-16 rounded-full flex items-center justify-center shadow-2xl active:scale-95 transition-transform">
