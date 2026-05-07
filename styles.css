@@ -603,6 +603,105 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.service-showcase {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  gap: 18px;
+  min-height: 100%;
+  padding: 18px;
+}
+
+.service-card:hover .service-preview img {
+  transform: translateY(-12%);
+}
+
+.service-preview {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #000;
+  background: var(--surface-2);
+  aspect-ratio: 9 / 16;
+}
+
+.service-preview::before {
+  position: absolute;
+  inset: 0;
+  border: 10px solid rgb(255 255 255 / 55%);
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-preview img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: initial;
+  object-position: top center;
+  transition: transform 900ms ease;
+}
+
+.service-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-content .tag {
+  margin-bottom: 16px;
+}
+
+.service-content h2 {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.service-content p {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+}
+
+.service-plumbing {
+  background: #e9f3ff;
+}
+
+.service-realestate {
+  background: #111111;
+  color: var(--white);
+}
+
+.service-realestate p {
+  color: rgb(255 255 255 / 76%);
+}
+
+.service-realestate .tag {
+  background: var(--yellow);
+  color: #000;
+}
+
+.service-wood {
+  background: #f3dfca;
+}
+
+.service-lawn {
+  background: #dff1dd;
+}
+
+.service-lawn .tag {
+  background: #1f7a3d;
+  color: var(--white);
+}
+
+.service-tires {
+  background: #ffe6df;
+}
+
 .timeline {
   position: relative;
   display: grid;
@@ -862,6 +961,10 @@ textarea {
     grid-column: auto;
   }
 
+  .service-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .timeline::before,
   .process-row::after {
     display: none;
@@ -910,5 +1013,13 @@ textarea {
 
   .button {
     width: 100%;
+  }
+
+  .service-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .service-preview {
+    max-height: 560px;
   }
 }
