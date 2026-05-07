@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#725c00",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffdad2",
+                    "secondary-fixed-dim": "#edc200",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed-variant": "#474747",
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-container": "#e15637",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb4a3",
+                    "surface-container": "#eeeeee",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#8c1900",
+                    "on-surface-variant": "#4c4546",
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#000000",
+                    "surface-variant": "#e2e2e2",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary-fixed-variant": "#564500",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffe07f",
+                    "on-surface": "#1a1c1c",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-fixed": "#3d0600",
+                    "secondary-container": "#fed000",
+                    "outline": "#7e7576",
+                    "on-primary-container": "#848484",
+                    "inverse-surface": "#2f3131",
+                    "background": "#f9f9f9",
+                    "tertiary-container": "#3d0600",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-primary": "#c6c6c6",
+                    "surface-tint": "#5e5e5e",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#000000",
+                    "error": "#ba1a1a",
+                    "primary-container": "#1b1b1b",
+                    "surface-dim": "#dadada",
+                    "surface": "#f9f9f9",
+                    "primary-fixed-dim": "#c6c6c6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "stack-sm": "12px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "stack-md": "32px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "display-xl": ["Space Grotesk"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "headline-lg": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .organic-pill {
+            border-radius: 9999px;
+        }
+        .bento-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50" data-icon="grid_view">grid_view</span>
+<h1 class="text-2xl font-black tracking-tighter text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Vert Horizon</h1>
+</div>
+<button class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-900 dark:text-zinc-50 font-bold hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all duration-300 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 active:scale-95 duration-150 ease-in-out">
+            Contact Us
+        </button>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative px-margin-mobile md:px-margin-desktop py-stack-md">
+<div class="relative w-full aspect-[4/5] md:aspect-[21/9] overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Lush green garden landscape" class="w-full h-full object-cover" data-alt="A sun-drenched, sprawling estate garden with meticulously manicured lawns featuring vibrant emerald green grass. The landscape is framed by organic stone pathways and artfully placed flowering shrubs. Warm morning sunlight filters through mature oak trees, creating a serene, high-end residential atmosphere. The visual style is crisp and professional, emphasizing natural beauty and horticultural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuX42tpEFr5GKUWJsHFhkrUBUHEzopzWaQv8LVvfU4G-uTG4FktMf8pmFefGMW_mF7740c41IDRgYaSRC4e-sc6zPPL39Ky_KUdFmkEQ4zyi9_vGCGOan_N9aIpSci_f8RmMhLLFyBY4jwy8Oj0r43mbGW1ej-WqrF0zHlGFCWbJAavZgP4_0Cj1JHnRjqchkJPyeOMqZo2b-0i9KBcM56GP4zL59XHhqcwGws7Tj-G1pteeHSaaHgt8EESXxW5--4Yh0aQFWyGA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-gutter">
+<span class="font-label-caps text-label-caps text-secondary-container mb-2">MASTERING THE LANDSCAPE</span>
+<h2 class="font-display-xl text-headline-lg text-white mb-4 leading-tight">Elevating Every Blade of Grass.</h2>
+<button class="bg-secondary-container text-on-secondary-container font-headline-md text-body-md px-8 py-4 organic-pill self-start hover:bg-secondary-fixed transition-colors active:scale-95 duration-150">
+                        Book Your Consultation
+                    </button>
+</div>
+</div>
+</section>
+<!-- Seasonal Packages: Bento Layout -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="flex flex-col gap-base mb-stack-md">
+<h3 class="font-headline-lg text-headline-lg text-primary">Seasonal Precision</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Curated care for the changing horizon. Select the treatment your soil demands.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Package 1 -->
+<div class="bento-card col-span-1 md:col-span-2 bg-white p-gutter border border-outline-variant rounded-xl flex flex-col md:flex-row gap-gutter">
+<div class="w-full md:w-1/2 aspect-video overflow-hidden rounded-lg">
+<img alt="Professional mowing service" class="w-full h-full object-cover" data-alt="A professional landscaper using a high-precision zero-turn mower on an expansive, lush lawn. The grass shows perfect, alternating light and dark green stripes under a clear blue sky. The scene is bright and airy, communicating efficiency and technical excellence in lawn maintenance. The lighting is crisp afternoon sun, highlighting the vibrant texture of the turf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBElmVZAyJN4xzTIsJ11cGXIs56reauI2kav5do5qWZJzE8TCg7gXsWdtx_K0FDiRk_-LwmrEUXFyeEEKG-FptCMYis54yqpBGGkKKf9ovbsDsictD-Ap3ol2StvoBe5IQUjsB54tFiRt6RKPlOGuBqPdnIlpGW_07SYqOjzqCy0xmel-Jf3BGbMGQOuY1fe83H6O8RS7KYJZfVltBeshpyv7XiHFf9kzH69QRVWiVa6RuYa4HzwXKMHveq034Cfhc1DByaEPoE_A"/>
+</div>
+<div class="flex flex-col justify-center gap-4">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="grass">grass</span>
+<span class="font-label-caps text-label-caps">PREMIUM CARE</span>
+</div>
+<h4 class="font-headline-md text-headline-md">The Weekly Mow</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision cutting, edging, and debris blowing to maintain a sharp, estate-level finish year-round.</p>
+<div class="mt-auto">
+<span class="font-display-xl text-headline-md text-secondary">From $55</span>
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="bento-card bg-surface-container-lowest p-gutter border border-outline-variant rounded-xl flex flex-col gap-4">
+<div class="flex items-center gap-2 text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="plumbing">plumbing</span>
+<span class="font-label-caps text-label-caps">SPRING CLEANUP</span>
+</div>
+<h4 class="font-headline-md text-headline-md">Renewal Pack</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Post-winter revitalization including leaf removal, mulching, and first-prune services.</p>
+<div class="mt-auto pt-4">
+<button class="w-full border border-primary font-headline-md text-body-md py-3 rounded-lg hover:bg-primary hover:text-white transition-all">Explore Service</button>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="bento-card bg-secondary-container p-gutter rounded-xl flex flex-col gap-4">
+<div class="flex items-center gap-2 text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="handyman">handyman</span>
+<span class="font-label-caps text-label-caps">SOIL HEALTH</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-secondary-container">Core Aeration</h4>
+<p class="font-body-md text-body-md text-on-secondary-container/80">Allow your lawn to breathe. Professional aeration and over-seeding for a dense, vibrant turf.</p>
+<div class="mt-auto pt-4 flex justify-between items-center">
+<span class="font-headline-md text-headline-md text-on-secondary-container">$120</span>
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Package 4 -->
+<div class="bento-card col-span-1 md:col-span-2 bg-white p-gutter border border-outline-variant rounded-xl flex flex-col md:flex-row-reverse gap-gutter">
+<div class="w-full md:w-1/2 aspect-video overflow-hidden rounded-lg">
+<img alt="Luxury garden irrigation" class="w-full h-full object-cover" data-alt="A detailed close-up of a high-tech smart irrigation system spraying a fine mist over a bed of exotic garden plants. The water droplets are frozen in mid-air by a fast shutter speed, catching the golden hour sunlight. The surrounding foliage is deep green and saturated, emphasizing life and vitality. The overall aesthetic is one of precision engineering meets organic growth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe-7ygJKqivb-LSA66BlPGzkXitZdOFvk9RExgY9BcwGWxi4SSuawmvnhLnpKqa2ZIDueMXYlys_NfCeclD1WltHYq0kMdVUfaXTZN0Iy5zRVW1mR6MO494Cpcs_-ExH1sGluzioF8kx1Lwa7Uzq01-Nuig4IvzacVJE6Zzx7VglU5_t2ePf-L70iJGWwahn8CMEuBBVXNshmppx0eJZ6wXbDQOJwLKGHzHJ1g2ZYdTRqftp5RjtgvW1kZWT8c3wpg-v8At9vhYw"/>
+</div>
+<div class="flex flex-col justify-center gap-4">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+<span class="font-label-caps text-label-caps">SMART HYDRATION</span>
+</div>
+<h4 class="font-headline-md text-headline-md">Irrigation Audit</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Efficiency testing and smart controller installation to optimize water usage while maximizing growth.</p>
+<div class="mt-auto pt-2">
+<a class="text-primary font-bold underline decoration-secondary decoration-2 underline-offset-4" href="#">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Showcase: Asymmetric Grid -->
+<section class="bg-surface-container-low px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="flex flex-col gap-base mb-stack-md text-center items-center">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="photo_library">photo_library</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">The Vert Gallery</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Visual proof of our commitment to horticultural excellence and structural landscaping.</p>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-gutter space-y-gutter">
+<div class="break-inside-avoid">
+<img alt="Contemporary garden design" class="w-full rounded-lg border border-outline-variant shadow-sm" data-alt="A contemporary backyard transformation featuring sharp architectural lines, a minimalist gray stone patio, and a perfectly level lawn. The garden incorporates native grasses and structural boxwood hedges. The lighting is soft evening twilight with subtle warm LED garden lights illuminating the textures. The scene is sophisticated and high-end, showcasing modern landscape design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-ywx7mmw1Vk_Z19BmZpQ159uoYwdOZdCrdi56AwgTfRebAM_OZEQc9DZW0jqOy53uPsbnPVzZDb800lqTrIufpJzhFBWqNBwTmHq87bUZ-jRvg4xCvKncsMabYo60mJVtsliYRmjUVrVFSNTt2M1zEEB6K7-yl1_ycwEv2hQ3xpf3LfP-NWE2TB-UYz_R2fMVg04Nz1g8Ek4RYPJXEOQPP-CiwLt23K-hydM2-86mPgV6MrKSYJsJyHEHeqVBN-XpYY6b1W-_Q"/>
+</div>
+<div class="break-inside-avoid">
+<img alt="Lush green turf detail" class="w-full rounded-lg border border-outline-variant shadow-sm" data-alt="Extreme close-up of a healthy, thick green lawn with water dew drops on the blades of grass. The morning sun creates a bokeh effect in the background, making the scene feel fresh and vital. The color is a vibrant, natural emerald green, representing the pinnacle of lawn health and professional care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZQLG0oT9be7CL6VO-lG19eNwtYVKDFzkiofgPleuwPLM2m6Cy-SNdkgt563OSGuXCzXJU3RmuB5i4kDkE7THoaaaCEVq9lDrYVBqkSrn6bAmAV_-wqUVoC-hrdW5fQqB1xot2ILyPHyJanv1ySuv2hzN6kS7ll1bIpBDL4iXSMKhc2OLcFNIwcw5n84ZPaEytc0TKior72qxYZxKoTxQ2MoUfwiHoGQcu6STnRbRPY6EIh3Ud8tYa7ldXcO_l2AUUzITK0XIEKQ"/>
+</div>
+<div class="break-inside-avoid">
+<img alt="Landscaped walkway" class="w-full rounded-lg border border-outline-variant shadow-sm" data-alt="A curved natural flagstone walkway winding through a lush suburban garden. The path is bordered by neatly edged lawns and a variety of colorful perennial flowers in shades of purple and yellow. The lighting is bright midday sun, casting soft shadows and highlighting the tactile quality of the stone and plants. The atmosphere is inviting and professionally maintained." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLw9V1-rnSZGImDTiZcwvFd2hOD5ppOzUeirTaidNmmQ2aVo9g09lrf7rHeadS3gI4M5vBpeFJ4Kbb0B6-du0E5Xq0RmcYzIqfXhoMI_JdmpLGi8HBt056KSwTW5yCIF40nM26duAXJJCd84wLZeUUmEFzKivyIMiPZOdY6mJXi19LKiJVR0P6el_FdLfLhQ0ub4irJ8fl48B4BVmP1uMU9SiMkt_5XTgdqMOoKNARYVjxPZeQc2SVH3oYz85y_upeAYSVdzUgWA"/>
+</div>
+<div class="break-inside-avoid">
+<img alt="Estate entrance landscaping" class="w-full rounded-lg border border-outline-variant shadow-sm" data-alt="A grand estate entrance featuring a perfectly manicured lawn that wraps around a circular driveway. Symmetrical topiaries and white flowering bushes line the architecture. The image is captured from a low angle to emphasize the scale and luxury of the property. The overall color palette is dominated by deep greens and clean whites under a soft, overcast sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx3cuq1sAcT7PfJHzIndRt5GKQFxk3BC6wlRaTnLTrs7tbM1XvB3SlKANrQEppsxXbnbXGCo9TQ1Y7LFcnAxzcAudbgzUFjS5rCGRDPzxmqteX-tAy5ZFGo7ZV7JkxfrWe-6A9e2CuIuISzK_3dQ0UU8TboILYiefKuVht73kwlJXZXYQoilXhRPXovhPBk_6pjuPEEhzrjFod2_mUpv8xkNjIfJ7rDyRmWe_di563y0vtTo8Zre7gYYGl6TCEtB08Aa8SmnWA6g"/>
+</div>
+<div class="break-inside-avoid">
+<img alt="Backyard entertaining space" class="w-full rounded-lg border border-outline-variant shadow-sm" data-alt="A high-end outdoor entertaining space featuring a built-in stone fire pit surrounded by comfortable modern seating. The patio seamlessly transitions into a plush lawn area designed for recreation. Large decorative boulders and ornamental trees provide privacy and texture. The lighting is warm golden hour, creating a cozy and luxurious outdoor living mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjFZNbEhk6ev0ReZqJ7tVONTAVcQrz_JQxs8QjA4yP_J-0SsqtfteJkVNDONExBseP3_pJpW0KUUzgtgdTd2Zx8i9pBED-3Yt4P8l1s2ZoKoMwp9jARyQ-OBRq_j4BmuOSitYSPxooNZUOZg2fTRIgfdzv__8pvC5nvg-ka9R_E-bAZwsNd9r2AuzYbx6xiLFi3SZ9UbwukLz6GtE57_IlnAXz3rwUjkQGY_QK2cVogmcKqX-Ya7bK-z-pHuUB-Ky5l5WiUAbIJg"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg bg-primary text-white text-center rounded-t-[3rem]">
+<div class="max-w-3xl mx-auto flex flex-col gap-stack-md items-center">
+<h2 class="font-display-xl text-headline-lg md:text-display-xl">Ready for a deeper green?</h2>
+<p class="font-body-lg text-body-lg text-white/70">Join the Vert Horizon network and transform your property into a high-precision natural sanctuary.</p>
+<div class="flex flex-col md:flex-row gap-4 w-full justify-center">
+<button class="bg-white text-primary font-headline-md text-body-md px-10 py-5 organic-pill hover:bg-zinc-200 transition-all">Claim Your Free Quote</button>
+<button class="border border-white/30 text-white font-headline-md text-body-md px-10 py-5 organic-pill hover:bg-white/10 transition-all">Our Process</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-8 bg-zinc-50 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+<div class="flex flex-col items-center md:items-start gap-4">
+<h2 class="font-bold text-zinc-900 dark:text-zinc-50 text-xl font-['Space_Grotesk'] tracking-tighter">Vert Horizon</h2>
+<p class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 text-center md:text-left leading-relaxed">
+                © 2024 Ordirodi Master System. High-Precision Service Network.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Emergency Services</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Portfolio</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-900 dark:text-zinc-50 underline font-bold transition-colors opacity-100 hover:opacity-80" href="#">Book Appointment</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Terms</a>
+</div>
+</footer>
+<!-- FAB for mobile focus -->
+<div class="fixed bottom-8 right-8 z-50 md:hidden">
+<button class="bg-secondary-container text-on-secondary-container h-14 w-14 rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+</button>
+</div>
+</body></html>

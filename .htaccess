@@ -7,6 +7,9 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+(portfolio|process|quote|merci)\.html[\s?]
 RewriteRule ^(portfolio|process|quote|merci)\.html$ /$1 [R=301,L]
 
+RewriteCond %{THE_REQUEST} \s/+sites/(immobilier|plomberie|ebenisterie|pelouse|pneus)\.html[\s?]
+RewriteRule ^sites/(immobilier|plomberie|ebenisterie|pelouse|pneus)\.html$ /sites/$1 [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ $1.html [L]

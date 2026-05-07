@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .serif-heading {
+      font-family: 'Space Grotesk', serif; /* Using Space Grotesk as the high-precision serif-adjacent stylistic choice from the config */
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#725c00",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#ffdad2",
+            "secondary-fixed-dim": "#edc200",
+            "on-background": "#1a1c1c",
+            "on-primary-fixed-variant": "#474747",
+            "outline-variant": "#cfc4c5",
+            "on-tertiary-container": "#e15637",
+            "on-secondary-fixed": "#231b00",
+            "tertiary-fixed-dim": "#ffb4a3",
+            "surface-container": "#eeeeee",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#8c1900",
+            "on-surface-variant": "#4c4546",
+            "on-secondary-container": "#6f5900",
+            "primary": "#000000",
+            "surface-variant": "#e2e2e2",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f3f3f3",
+            "on-secondary-fixed-variant": "#564500",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#ffe07f",
+            "on-surface": "#1a1c1c",
+            "inverse-on-surface": "#f1f1f1",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#1b1b1b",
+            "primary-fixed": "#e2e2e2",
+            "on-tertiary-fixed": "#3d0600",
+            "secondary-container": "#fed000",
+            "outline": "#7e7576",
+            "on-primary-container": "#848484",
+            "inverse-surface": "#2f3131",
+            "background": "#f9f9f9",
+            "tertiary-container": "#3d0600",
+            "surface-container-high": "#e8e8e8",
+            "surface-bright": "#f9f9f9",
+            "inverse-primary": "#c6c6c6",
+            "surface-tint": "#5e5e5e",
+            "surface-container-highest": "#e2e2e2",
+            "on-primary": "#ffffff",
+            "tertiary": "#000000",
+            "error": "#ba1a1a",
+            "primary-container": "#1b1b1b",
+            "surface-dim": "#dadada",
+            "surface": "#f9f9f9",
+            "primary-fixed-dim": "#c6c6c6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "container-max": "1280px",
+            "stack-lg": "80px",
+            "margin-desktop": "64px",
+            "stack-sm": "12px",
+            "gutter": "24px",
+            "base": "8px",
+            "stack-md": "32px",
+            "margin-mobile": "16px"
+          },
+          "fontFamily": {
+            "headline-md": ["Space Grotesk"],
+            "label-caps": ["Space Grotesk"],
+            "body-md": ["Be Vietnam Pro"],
+            "display-xl": ["Space Grotesk"],
+            "body-lg": ["Be Vietnam Pro"],
+            "headline-lg": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+            "label-caps": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md text-zinc-900 dark:text-zinc-50 fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto border-b border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50" data-icon="grid_view">grid_view</span>
+<span class="text-2xl font-black tracking-tighter text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Ordirodi</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-zinc-900 dark:text-zinc-50 border-b-2 border-zinc-900 dark:border-zinc-50 pb-1 font-['Space_Grotesk'] font-bold tracking-tight" href="#">Real Estate</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-zinc-200 font-['Space_Grotesk'] transition-all duration-300" href="#">Portfolio</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-zinc-200 font-['Space_Grotesk'] transition-all duration-300" href="#">Book Appointment</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 text-label-caps font-label-caps active:scale-95 duration-150 ease-in-out">
+      Contact Us
+    </button>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="relative h-[600px] w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Luxury Real Estate Hero" class="absolute inset-0 w-full h-full object-cover" data-alt="A luxurious modern villa at dusk with expansive glass walls reflecting a warm amber interior light. The architecture is sharp and minimalist, surrounded by manicured minimalist landscaping and a still infinity pool. The sky is a deep twilight blue, creating a high-contrast and sophisticated atmosphere. The image emphasizes high-end real estate and premium architectural craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9fzZAKxM07nXfzr95BLTQTYMldVSqYKMwYqCuLrkRPSdsm827nykITrUTAF5ipZJmvyYEBqWWVcHAiiA8Lr_pkD5It-X19XRJgeZ-qyqrVbmAbY0tyJW2U7BvY9WGkXlVxRr4KAliVO9wSsb6QrL9CUk9whq6-WOc97AoviAto5qL8o23e-_N_p-lcUSQyWqH9qm42K4_lMldMT6tNMd3eFSOW6sD9iO2Lp0MdUzz9wWYECQ6HQtixUgVtGly_z-aiElXf7qTDg"/>
+<div class="relative z-20 text-center px-4 max-w-3xl">
+<h1 class="text-on-primary font-display-xl text-display-xl serif-heading mb-stack-sm tracking-tight">Prestige Immobilier</h1>
+<p class="text-on-primary/90 font-body-lg text-body-lg mb-stack-md font-light">Curating the most exclusive architectural masterpieces across the globe.</p>
+<!-- Modern Search Bar -->
+<div class="bg-white p-2 shadow-2xl flex flex-col md:flex-row gap-2 max-w-2xl mx-auto">
+<div class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-zinc-100">
+<span class="material-symbols-outlined text-zinc-400 mr-2" data-icon="search">search</span>
+<input class="w-full border-none focus:ring-0 font-body-md text-zinc-900 placeholder:text-zinc-400" placeholder="Location, Neighborhood..." type="text"/>
+</div>
+<div class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-zinc-100">
+<span class="material-symbols-outlined text-zinc-400 mr-2" data-icon="home">home</span>
+<select class="w-full border-none focus:ring-0 font-body-md text-zinc-900 bg-transparent">
+<option>Property Type</option>
+<option>Penthouse</option>
+<option>Villa</option>
+<option>Estate</option>
+</select>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps transition-all hover:bg-zinc-800">
+              SEARCH
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Listings - Asymmetric Layout -->
+<section class="px-margin-mobile md:px-margin-desktop mb-stack-lg max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<span class="text-secondary font-label-caps text-label-caps tracking-[0.2em] mb-2 block">EXCLUSIVES</span>
+<h2 class="font-headline-lg text-headline-lg serif-heading">Featured Portfolio</h2>
+</div>
+<a class="text-zinc-900 font-label-caps text-label-caps border-b border-primary pb-1 hidden md:block" href="#">VIEW ALL COLLECTIONS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Feature 1: Large -->
+<div class="md:col-span-8 group relative overflow-hidden h-[500px]">
+<img alt="Modern Kitchen Design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An ultra-modern luxury kitchen with a large dark marble island and gold-toned pendant lighting. The space features floor-to-ceiling windows looking out onto a lush private terrace. Minimalist cabinetry in matte black provides a stark and elegant contrast to the soft natural light flooding the room. The mood is one of quiet sophistication and architectural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK_3b82DM5oy-gn1j9vJrOf66R-DLriu0ehKkIqdLFffAmhsHuXqfSrucrB6W3zfnWLukEIYtQFOXYd1qd-piHdFSFPdKJzERmn_NXwn6Y8HjDnNckalxdkCtXP22EuKMYhLo72OZ5TsZh1pGX4Zjb-jC3b64Rzkno1T5C1UMFeB_VvYJovrhM0W2r45j3VuFOPwsCz4sk_qdxrQXfMwdnyJemqZiR0tsdpYCwy9HM9c_AULID6kZkUREQQbZgCxFEiYdX__3ryg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-stack-md text-on-primary">
+<span class="bg-secondary/20 backdrop-blur-sm px-3 py-1 text-[10px] tracking-widest font-bold uppercase w-fit mb-3">NEW LISTING</span>
+<h3 class="text-headline-md font-headline-md serif-heading">The Obsidian Estate</h3>
+<p class="font-body-md opacity-80 mb-4">Beverly Hills, California • $24,500,000</p>
+<div class="flex gap-6 text-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]" data-icon="bed">bed</span> 6 Beds</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]" data-icon="bathtub">bathtub</span> 8 Baths</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]" data-icon="square_foot">square_foot</span> 12,400 sqft</span>
+</div>
+</div>
+</div>
+<!-- Feature 2: Small/Tall -->
+<div class="md:col-span-4 group relative overflow-hidden h-[500px]">
+<img alt="Coastal Villa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sun-drenched Mediterranean-style luxury home exterior featuring white stucco walls and classic arched doorways. The scene is framed by vibrant magenta bougainvillea flowers and a pristine turquoise pool in the foreground. The lighting is bright and airy, evoking a sense of timeless elegance and exclusive coastal living. Soft neutral shadows add depth to the textured stone walkways." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDowKHNuyDoiqgbN2kuHT3jKWLLRbjwdXon2kcXjnVpspYbO6fham9dm2ll83pbarVUc7P_adW_jiP3V6ohtkhi0n-vhXnrNncLpLUwV1OvPAQoXs-wPWEppbgwN4hOdIa3rnuWVyr0xML3KMA1Dx5GHfQghWk-3UD_xAvYMKbguiWVfV4Jqa7rqcCfV3KiOe6wNiWzZ1eI8PWe_zJKmofZS_ZF--vNR6mPkMTo7DcP2U0zsNC3JSh_p2bYwsz8udKCBSYVhc9iBw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-stack-md text-on-primary">
+<h3 class="text-headline-sm font-headline-md serif-heading">Azure Horizon Villa</h3>
+<p class="font-body-md opacity-80">Cap d'Antibes, France • €18,200,000</p>
+</div>
+</div>
+<!-- Feature 3: Medium -->
+<div class="md:col-span-6 group relative overflow-hidden h-[400px]">
+<img alt="Modern Living Space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist living room with high ceilings and a brutalist concrete accent wall. A sculptural black leather sofa sits on a large plush cream-colored rug, surrounded by floor-to-ceiling glass walls that reveal a misty forest background. The interior design is focused on high-precision materials and expansive spatial luxury, using a monochromatic palette with subtle warm wood accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH_q7BkM3KhjGqF1ntdY7A11CUMW49iVvLRUYBiPkKC22z7XnW1CDCkcXLTFzk5lQwEi7x_Y6kMueMv7VBhX8xBFZrrviTYAOr1RFPYlD5gVOjuyJHji7M3eJREn0um5dbky0yWX23vdN2TDhD1s1zQIQBC5kJ1q7raYTLnlwfLLuS_bVeuXZgyNKtdeW_DB91Z59YCxqyFfeVVgPqKFE_J0WsVvvrKrmqsxZCqFg815oNQYgebx3qdxEab2CEAZOrT4FA8eLQWQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-stack-md text-on-primary">
+<h3 class="text-headline-sm font-headline-md serif-heading">Minimalist Sky Loft</h3>
+<p class="font-body-md opacity-80">SoHo, New York • $9,800,000</p>
+</div>
+</div>
+<!-- Feature 4: Medium -->
+<div class="md:col-span-6 group relative overflow-hidden h-[400px]">
+<img alt="Luxury Bathroom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant master bathroom suite with dual vanities crafted from book-matched white marble and brushed gold hardware. A large freestanding soaking tub sits beneath a modern architectural chandelier. The space is bright and spacious, defined by clean lines and premium stone finishes. The lighting is soft and diffused, creating a serene, spa-like atmosphere in a high-end luxury setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoikxe1VJT-Sf-RH6rzXaoujZOYcD08dD7Y8HBuaiKaWQTlairhhfI570pGQovJ14PjQGeRU9rzZ2WFOppoLaMiKrcB23JMMfbDW5m47i-UgXT9CUtfK9jD0fw6qnK8fCbFQhVOZwrqZDeNDZSjgyh6wbsiuWrD4zkmiQ3L6PDsR2PFR7GZolrX94Ae8CJ7Mrg2rreW065HtUHimCuNs7i1imQzoEmdhQzKa4YE_xGZqPSWivFNl4DGSHcAhiGvvUJYHPavxpjXQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-stack-md text-on-primary">
+<h3 class="text-headline-sm font-headline-md serif-heading">The Gilded Retreat</h3>
+<p class="font-body-md opacity-80">Lake Como, Italy • Price Upon Request</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About the Agent -->
+<section class="bg-surface-container py-stack-lg px-margin-mobile md:px-margin-desktop">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-md items-center">
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-32 h-32 border-l-2 border-t-2 border-secondary/40"></div>
+<div class="overflow-hidden bg-zinc-200 aspect-[4/5] relative">
+<img alt="The Agent" class="w-full h-full object-cover" data-alt="A professional real estate broker in a tailored charcoal suit standing against a soft-focus background of a modern glass office. The individual conveys confidence and authority with a calm, inviting expression. The lighting is cinematic and high-key, emphasizing the premium and professional nature of the service. The color palette is composed of sophisticated grays and whites with warm skin tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrLBpGjhGoWV4uqELQi6D5ANLwe78rLzyyj7Cs-mSM59q0IHI1RT_elM0oE6DmsEs_6bRQO-wGZmM-masrCTuLNKVbWZ6Xw2lzDBS79jLVWsNPO-6MGYeQttQbbdA0ideleNs5qbsZTxzF3Zifm_ZuRudW2_RYeH3rJrdzxh15XDk1amKfoTsLKQGnuGFT4oIwGPp2SXM8venz7b2mnKc_lKo_aY8JJZ7HmLzFWOFvriaNrb1DG07uvIfYjjiIzDBxVDiQsLbhhA"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 border-r-2 border-b-2 border-secondary/40"></div>
+</div>
+<div class="md:pl-12">
+<span class="text-secondary font-label-caps text-label-caps tracking-[0.2em] mb-4 block">LEAD BROKER</span>
+<h2 class="font-headline-lg text-headline-lg serif-heading mb-6">Julian Vane</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+            With over two decades of experience in the global ultra-luxury market, Julian Vane has facilitated the sale of some of the most significant architectural estates in the world. 
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+            Our philosophy is built on discretion, precision, and an uncompromising commitment to the highest level of craftsmanship in real estate advisory.
+          </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:bg-zinc-800 transition-all">DISCOVER MORE</button>
+<button class="border border-primary text-primary px-8 py-4 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-all">CONTACT</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Navigation Drawer (Implicitly represented as the Industry Showcase in the Shared Components) -->
+<aside class="hidden fixed right-0 top-0 h-full w-80 bg-white dark:bg-zinc-950 flex flex-col p-6 rounded-l-lg border-l border-zinc-100 dark:border-zinc-900 shadow-2xl z-[60]">
+<div class="flex justify-between items-center mb-8">
+<span class="text-lg font-bold text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Industry Showcase</span>
+<span class="material-symbols-outlined cursor-pointer">close</span>
+</div>
+<nav class="flex flex-col gap-2">
+<div class="flex items-center gap-4 p-3 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="plumbing">plumbing</span>
+<span class="font-['Space_Grotesk'] text-sm font-medium">Plumbing</span>
+</div>
+<div class="flex items-center gap-4 p-3 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="grass">grass</span>
+<span class="font-['Space_Grotesk'] text-sm font-medium">Lawn Care</span>
+</div>
+<div class="flex items-center gap-4 p-3 bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 font-bold font-['Space_Grotesk'] text-sm">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Real Estate</span>
+</div>
+<div class="flex items-center gap-4 p-3 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="handyman">handyman</span>
+<span class="font-['Space_Grotesk'] text-sm font-medium">Cabinetry</span>
+</div>
+<div class="flex items-center gap-4 p-3 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="tire_repair">tire_repair</span>
+<span class="font-['Space_Grotesk'] text-sm font-medium">Tire Shop</span>
+</div>
+</nav>
+</aside>
+<!-- Footer Section -->
+<footer class="bg-zinc-50 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-bold text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk'] text-xl uppercase tracking-tighter">Prestige Immobilier</span>
+<p class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+        © 2024 Ordirodi Master System. High-Precision Service Network.
+      </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-zinc-500 dark:text-zinc-400 font-['Space_Grotesk'] text-xs uppercase tracking-widest hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Emergency Services</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-['Space_Grotesk'] text-xs uppercase tracking-widest hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Portfolio</a>
+<a class="underline font-bold text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk'] text-xs uppercase tracking-widest hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Book Appointment</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-['Space_Grotesk'] text-xs uppercase tracking-widest hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Terms</a>
+</div>
+</footer>
+</body></html>

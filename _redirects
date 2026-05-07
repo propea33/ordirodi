@@ -3,8 +3,18 @@
 /process.html /process 301!
 /quote.html /quote 301!
 /merci.html /merci 301!
+/sites/immobilier.html /sites/immobilier 301!
+/sites/plomberie.html /sites/plomberie 301!
+/sites/ebenisterie.html /sites/ebenisterie 301!
+/sites/pelouse.html /sites/pelouse 301!
+/sites/pneus.html /sites/pneus 301!
 
 /portfolio /portfolio.html 200
 /process /process.html 200
 /quote /quote.html 200
 /merci /merci.html 200
+/sites/immobilier /sites/immobilier.html 200
+/sites/plomberie /sites/plomberie.html 200
+/sites/ebenisterie /sites/ebenisterie.html 200
+/sites/pelouse /sites/pelouse.html 200
+/sites/pneus /sites/pneus.html 200

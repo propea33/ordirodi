@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#725c00",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffdad2",
+                    "secondary-fixed-dim": "#edc200",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed-variant": "#474747",
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-container": "#e15637",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb4a3",
+                    "surface-container": "#eeeeee",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#8c1900",
+                    "on-surface-variant": "#4c4546",
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#000000",
+                    "surface-variant": "#e2e2e2",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary-fixed-variant": "#564500",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffe07f",
+                    "on-surface": "#1a1c1c",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-fixed": "#3d0600",
+                    "secondary-container": "#fed000",
+                    "outline": "#7e7576",
+                    "on-primary-container": "#848484",
+                    "inverse-surface": "#2f3131",
+                    "background": "#f9f9f9",
+                    "tertiary-container": "#3d0600",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-primary": "#c6c6c6",
+                    "surface-tint": "#5e5e5e",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#000000",
+                    "error": "#ba1a1a",
+                    "primary-container": "#1b1b1b",
+                    "surface-dim": "#dadada",
+                    "surface": "#f9f9f9",
+                    "primary-fixed-dim": "#c6c6c6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "stack-sm": "12px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "stack-md": "32px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "display-xl": ["Space Grotesk"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "headline-lg": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .wood-gradient {
+            background: linear-gradient(to bottom, rgba(26, 28, 28, 0) 0%, rgba(26, 28, 28, 0.8) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50" data-icon="grid_view">grid_view</span>
+<h1 class="text-2xl font-black tracking-tighter text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Ordirodi</h1>
+</div>
+<button class="font-['Space_Grotesk'] font-bold tracking-tight text-zinc-900 dark:text-zinc-50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all duration-300 px-4 py-2 rounded active:scale-95 duration-150 ease-in-out">
+            Contact Us
+        </button>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full overflow-hidden">
+<img alt="Custom Artisan Table" class="absolute inset-0 w-full h-full object-cover" data-alt="A macro close-up of a masterfully crafted solid oak dining table, showing the rich, swirling grain of the natural wood under soft, warm workshop lighting. The table features traditional joinery details that emphasize artisanal precision. The background is a blurred high-end minimalist interior with earthy tones and soft morning light filtering through a window, creating a serene and premium atmosphere of timeless craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpb-I6vWSRrH7h6Zc3gMLRn4PA0OEU_8nZ8g535AVbjUlE1MPLaB0zjcRqT0GOiu2mni3Onp9gLQxfuwzYy4CgeYunFeSqfwaOvsKNlPxoYUhmZ0dUBxINpQQSTUeY2bo0Ztbjc6S9kQBX9E_QNnBmYCe10OO0lmzNCgm13jqtDgIuRQrdHEf9uE6aqphGH5-G4rwXz82OSwdDErx1-ZJjKZgyXJSK8mg5zSrErSuKu8gUzQ9OLIKCSRzU8huxYB2YNWpJ8l32w"/>
+<div class="absolute inset-0 wood-gradient flex flex-col justify-end p-margin-mobile pb-stack-lg">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps text-secondary-container mb-2 block uppercase">L'Atelier du Bois</span>
+<h2 class="font-display-xl text-[48px] leading-tight text-white mb-stack-sm font-['Space_Grotesk'] font-bold">L'Art de l'Essence.</h2>
+<p class="font-body-lg text-body-lg text-white/90 mb-stack-md max-w-md">Crafting bespoke heirloom furniture that bridges the gap between raw nature and architectural precision.</p>
+<div class="flex gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 font-label-caps text-label-caps rounded-lg active:scale-95 transition-all">Start Project</button>
+<button class="border border-white text-white px-8 py-4 font-label-caps text-label-caps rounded-lg backdrop-blur-sm active:scale-95 transition-all">View Gallery</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Process -->
+<section class="py-stack-lg px-margin-mobile bg-white">
+<div class="flex flex-col gap-base mb-stack-md">
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Our Process</h3>
+<div class="h-1 w-12 bg-secondary"></div>
+</div>
+<div class="grid grid-cols-1 gap-gutter">
+<!-- Design -->
+<div class="group p-stack-md border border-outline-variant rounded-lg hover:shadow-2xl transition-all duration-300">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="architecture">architecture</span>
+</div>
+<h4 class="font-headline-md text-[24px] font-bold">Design</h4>
+</div>
+<p class="font-body-md text-on-surface-variant">Every creation begins with a dialogue. We sketch your vision, balancing functional needs with aesthetic purity and structural integrity.</p>
+</div>
+<!-- Source -->
+<div class="group p-stack-md border border-outline-variant rounded-lg hover:shadow-2xl transition-all duration-300">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="forest">forest</span>
+</div>
+<h4 class="font-headline-md text-[24px] font-bold">Source</h4>
+</div>
+<p class="font-body-md text-on-surface-variant">We hand-select sustainable, local hardwoods. Each plank is chosen for its unique grain profile and enduring character.</p>
+</div>
+<!-- Craft -->
+<div class="group p-stack-md border border-outline-variant rounded-lg hover:shadow-2xl transition-all duration-300">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="handyman">handyman</span>
+</div>
+<h4 class="font-headline-md text-[24px] font-bold">Craft</h4>
+</div>
+<p class="font-body-md text-on-surface-variant">Traditional joinery meets modern precision. We dedicate hundreds of hours to ensuring every joint is a testament to durability.</p>
+</div>
+</div>
+</section>
+<!-- Portfolio Bento Grid -->
+<section class="py-stack-lg px-margin-mobile bg-surface-container-low">
+<div class="mb-stack-md">
+<span class="font-label-caps text-label-caps text-secondary block mb-2">CURATED WORK</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Masterpieces</h3>
+</div>
+<div class="grid grid-cols-2 gap-4 auto-rows-[200px]">
+<!-- Item 1: Large -->
+<div class="col-span-2 row-span-2 relative overflow-hidden rounded-xl">
+<img alt="Walnut Library" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A wide-angle shot of a custom-built walnut library wall in a modern office space. The dark, rich wood contrasts beautifully against light grey walls. The lighting is focused and warm, highlighting the intricate shelf dividers and hand-rubbed finish. The overall mood is one of quiet, sophisticated intelligence and high-end craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBgxFLXaJREqPDU-qPGbQhjB6DcDX_DGC2cjPKrARDCPLsQfqlKAD1NfI9oXPSixGS2_gk52i8BWJkbTcrfCGNExwnZIKkB3gZLUDSq7qCPBYFt4TVYcxIOqRXInq67T0zJ1XNLLzC47D_zawuP4VtC-wWnrDGWcNkH2sFyopbmToqxdC_8ZEdlPzI2nfEDBhzL2iu_hFeXKyLhaN6b18_BsuzGrJALqLY8D69w1adtVZoPvm6S5N3J7VLzlR6IGOrPp4UmbbtlA"/>
+<div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
+<p class="text-white font-label-caps text-xs">Custom Walnut Library</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="col-span-1 row-span-1 relative overflow-hidden rounded-xl">
+<img alt="Maple Dresser" class="w-full h-full object-cover" data-alt="A detailed view of a handcrafted maple dresser with circular brass hardware. The wood has a creamy, light texture with subtle growth rings. The setting is a minimalist bedroom with soft, diffused daylight. The image captures the tactile quality of the sanded wood and the precision of the drawer fit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDozzhmvUCMESlHqVsE6wovGzlMqU5spTSQHWBCJNct77I9Q6AxJBYTQvBPZe0a0awNuD6s-VX9d_-dhZCGZw_9bitkRdqxHV7HcV48_X8vYD8_r6_mOAY2_0FIWx6BRYpKHeGAUvVXXqBWIDmvp8bV3rBCcPNtw1jO7RYxPMgaHRXdyl67lkrJKkU1FdAY_ik1zR77hxXfC2ejmhGzkiQsrTk6uLlvUGZwvBlhseMss4CuxlMo-pjsX4m_yFgbKNH066cGCBVzaQ"/>
+</div>
+<!-- Item 3 -->
+<div class="col-span-1 row-span-2 relative overflow-hidden rounded-xl">
+<img alt="Live Edge Table" class="w-full h-full object-cover" data-alt="A sculptural cherry wood coffee table with an organic live edge, situated in a high-tech living room. The wood glows with a deep reddish-brown hue under warm accent lights. The contrast between the natural, irregular edge and the polished glass top reflects a fusion of nature and modern design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3y54F419ll0Sfdjm_eSKgV0XKWI0b57RCSji1cqCZMSKYyJk2xSpTIO1KRlX55aANDskIvXhknks5VSlGkrHrfBXW-20KL9N69vCrTTmsWcsvsv2BC0raE-a5GCA_cdcwtcx8KUa_MgPNoHcKcNJT8g4oj6YbUUcXFGPEOR9jhzIDXhLxz5e0PfLC1-ThNkUvdHKw0ygfLPDZQefFzzqxmemrvcvjQdCiKgTHhgo9_Ya-F-Q-Zkc1Sr5WrPvmjaS1zeXX7MCbwQ"/>
+</div>
+<!-- Item 4 -->
+<div class="col-span-1 row-span-1 relative overflow-hidden rounded-xl">
+<img alt="Oak Chairs" class="w-full h-full object-cover" data-alt="A set of custom-designed oak chairs around a minimalist table. The chairs feature slim, tapered legs and curved backrests that demonstrate high-precision steam-bending techniques. The lighting is bright and airy, emphasizing the clean lines and modern industrial aesthetic of the furniture set." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5A5gtyw9IZKTQIdtQqH3Gf3RbDP5s8p3jEuCyKlwczoti3LaE1bgy1Nnj75eAwrUhm8hr7vBa9bOoBcQRxsWrKyYf8dVBH6bvCgXIY9pIsQtUZJiVdH7JMiK-PsfpbBSdr-YF3-XB4EhBoz8ZNaaWinpdAqs4GirIFLVO-N6FkiNsMaQki7G3AAJABw9goKdfmHBjmyiqlhoWS5dB7i0tIhY8Pj6PjucVHxUGgCB4dt3GTLbEmElsHAiMZeZO2FHu2cYJsW84nA"/>
+</div>
+</div>
+<div class="mt-stack-md text-center">
+<button class="font-label-caps text-label-caps text-secondary border-b-2 border-secondary pb-1 active:opacity-50">Discover Full Portfolio</button>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-stack-lg px-margin-mobile bg-secondary text-on-secondary text-center">
+<h3 class="font-headline-lg text-headline-lg mb-stack-sm">Ready to build your legacy?</h3>
+<p class="font-body-md text-white/80 mb-stack-md max-w-sm mx-auto">We are currently accepting commissions for Q4 2024. Let's discuss your next custom piece.</p>
+<button class="bg-white text-secondary px-stack-md py-4 rounded-full font-label-caps text-label-caps shadow-xl active:scale-95 transition-all">Book Consultation</button>
+</section>
+</main>
+<!-- NavigationDrawer (Mobile Sidebar UI) -->
+<aside class="hidden h-full w-80 flex flex-col p-6 bg-white dark:bg-zinc-950 rounded-r-lg border-r border-zinc-100 dark:border-zinc-900 shadow-2xl">
+<div class="mb-stack-md">
+<h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Industry Showcase</h2>
+</div>
+<nav class="flex flex-col gap-2">
+<div class="flex items-center gap-4 p-3 rounded bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 font-bold font-['Space_Grotesk'] text-sm">
+<span class="material-symbols-outlined" data-icon="handyman" style="font-variation-settings: 'FILL' 1;">handyman</span>
+                Cabinetry
+            </div>
+<div class="flex items-center gap-4 p-3 rounded text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors font-['Space_Grotesk'] text-sm">
+<span class="material-symbols-outlined" data-icon="plumbing">plumbing</span>
+                Plumbing
+            </div>
+<div class="flex items-center gap-4 p-3 rounded text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors font-['Space_Grotesk'] text-sm">
+<span class="material-symbols-outlined" data-icon="grass">grass</span>
+                Lawn Care
+            </div>
+<div class="flex items-center gap-4 p-3 rounded text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors font-['Space_Grotesk'] text-sm">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                Real Estate
+            </div>
+<div class="flex items-center gap-4 p-3 rounded text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors font-['Space_Grotesk'] text-sm">
+<span class="material-symbols-outlined" data-icon="tire_repair">tire_repair</span>
+                Tire Shop
+            </div>
+</nav>
+</aside>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-8 bg-zinc-50 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-['Space_Grotesk'] font-bold text-zinc-900 dark:text-zinc-50">ORDIRODI</span>
+<p class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 text-center md:text-left">© 2024 Ordirodi Master System. High-Precision Service Network.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Portfolio</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Book Appointment</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Emergency Services</a>
+<a class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors opacity-100 hover:opacity-80" href="#">Terms</a>
+</div>
+</footer>
+</body></html>

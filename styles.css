@@ -712,6 +712,154 @@ textarea {
   background: #ffe6df;
 }
 
+.portfolio-site-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 56px;
+}
+
+.portfolio-site-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 4px solid #000;
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+  color: #000;
+  overflow: hidden;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.portfolio-site-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0 #000;
+}
+
+.portfolio-site-card:nth-child(5) {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  grid-template-rows: auto;
+}
+
+.site-browser {
+  overflow: hidden;
+  border-bottom: 4px solid #000;
+  background: var(--surface-2);
+}
+
+.portfolio-site-card:nth-child(5) .site-browser {
+  border-right: 4px solid #000;
+  border-bottom: 0;
+}
+
+.browser-bar {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  height: 34px;
+  padding: 0 12px;
+  border-bottom: 2px solid #000;
+  background: #000;
+}
+
+.browser-bar span {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  background: var(--yellow);
+}
+
+.browser-bar span:nth-child(2) {
+  background: var(--orange);
+}
+
+.browser-bar span:nth-child(3) {
+  background: var(--white);
+}
+
+.site-browser img {
+  height: 320px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.portfolio-site-card:nth-child(5) .site-browser img {
+  height: 100%;
+  min-height: 360px;
+}
+
+.site-card-content {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 14px;
+  padding: 24px;
+}
+
+.site-card-content h2 {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(1.85rem, 3vw, 3rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.site-card-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.site-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  border: 2px solid #000;
+  box-shadow: var(--shadow);
+  padding: 8px 12px;
+  background: var(--yellow);
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.portfolio-site-card.realestate {
+  background: #111;
+  color: var(--white);
+}
+
+.portfolio-site-card.realestate p {
+  color: rgb(255 255 255 / 76%);
+}
+
+.portfolio-site-card.realestate .tag {
+  background: var(--yellow);
+  color: #000;
+}
+
+.portfolio-site-card.plumbing {
+  background: #e9f3ff;
+}
+
+.portfolio-site-card.wood {
+  background: #f3dfca;
+}
+
+.portfolio-site-card.lawn {
+  background: #dff1dd;
+}
+
+.portfolio-site-card.lawn .tag {
+  background: #1f7a3d;
+  color: var(--white);
+}
+
+.portfolio-site-card.tires {
+  background: #ffe6df;
+}
+
 .timeline {
   position: relative;
   display: grid;
@@ -991,6 +1139,20 @@ textarea {
     grid-column: auto;
   }
 
+  .portfolio-site-grid,
+  .portfolio-site-card:nth-child(5) {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-site-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .portfolio-site-card:nth-child(5) .site-browser {
+    border-right: 0;
+    border-bottom: 4px solid #000;
+  }
+
   .timeline::before,
   .process-row::after {
     display: none;
@@ -1053,5 +1215,15 @@ textarea {
     width: 100%;
     flex-basis: auto;
     max-height: 560px;
+  }
+
+  .portfolio-site-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-browser img,
+  .portfolio-site-card:nth-child(5) .site-browser img {
+    height: 260px;
+    min-height: 0;
   }
 }

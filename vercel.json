@@ -25,6 +25,31 @@
       "source": "/merci.html",
       "destination": "/merci",
       "permanent": true
+    },
+    {
+      "source": "/sites/immobilier.html",
+      "destination": "/sites/immobilier",
+      "permanent": true
+    },
+    {
+      "source": "/sites/plomberie.html",
+      "destination": "/sites/plomberie",
+      "permanent": true
+    },
+    {
+      "source": "/sites/ebenisterie.html",
+      "destination": "/sites/ebenisterie",
+      "permanent": true
+    },
+    {
+      "source": "/sites/pelouse.html",
+      "destination": "/sites/pelouse",
+      "permanent": true
+    },
+    {
+      "source": "/sites/pneus.html",
+      "destination": "/sites/pneus",
+      "permanent": true
     }
   ]
 }
