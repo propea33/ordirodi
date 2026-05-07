@@ -1,6 +1,9 @@
 Options -MultiViews
 RewriteEngine On
 
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?]
+RewriteRule ^index\.html$ / [R=301,L]
+
 RewriteCond %{THE_REQUEST} \s/+(portfolio|process|quote)\.html[\s?]
 RewriteRule ^(portfolio|process|quote)\.html$ /$1 [R=301,L]
 
