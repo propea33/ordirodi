@@ -1,276 +1,192 @@
 <!DOCTYPE html>
-
-<html class="light" lang="fr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ORDIRODI | Portfolio de Projets</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=EB+Garamond:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-secondary-fixed-variant": "#524600",
-                    "secondary": "#6d5e00",
-                    "tertiary-fixed": "#ffdad8",
-                    "primary-container": "#1b1b1b",
-                    "on-secondary": "#ffffff",
-                    "tertiary-fixed-dim": "#ffb3b1",
-                    "on-primary-fixed": "#1b1b1b",
-                    "secondary-container": "#fddc00",
-                    "outline-variant": "#cfc4c5",
-                    "on-error-container": "#93000a",
-                    "surface-container-high": "#e8e8e8",
-                    "on-primary": "#ffffff",
-                    "on-tertiary": "#ffffff",
-                    "surface-tint": "#5e5e5e",
-                    "on-surface-variant": "#4c4546",
-                    "secondary-fixed-dim": "#e3c600",
-                    "on-tertiary-fixed-variant": "#92001c",
-                    "inverse-surface": "#2f3131",
-                    "surface-container-highest": "#e2e2e2",
-                    "on-tertiary-container": "#f1414d",
-                    "on-primary-container": "#848484",
-                    "on-surface": "#1a1c1c",
-                    "primary": "#000000",
-                    "surface-variant": "#e2e2e2",
-                    "outline": "#7e7576",
-                    "tertiary": "#000000",
-                    "surface-container-lowest": "#ffffff",
-                    "tertiary-container": "#410007",
-                    "on-background": "#1a1c1c",
-                    "inverse-on-surface": "#f1f1f1",
-                    "secondary-fixed": "#ffe24b",
-                    "background": "#f9f9f9",
-                    "on-tertiary-fixed": "#410007",
-                    "primary-fixed-dim": "#c6c6c6",
-                    "surface-bright": "#f9f9f9",
-                    "surface": "#f9f9f9",
-                    "inverse-primary": "#c6c6c6",
-                    "error": "#ba1a1a",
-                    "on-primary-fixed-variant": "#474747",
-                    "surface-container": "#eeeeee",
-                    "surface-container-low": "#f3f3f3",
-                    "primary-fixed": "#e2e2e2",
-                    "surface-dim": "#dadada",
-                    "on-error": "#ffffff",
-                    "on-secondary-container": "#706000",
-                    "on-secondary-fixed": "#211b00",
-                    "error-container": "#ffdad6"
-            },
-            "borderRadius": {
-                    "DEFAULT": "4px",
-                    "lg": "8px",
-                    "xl": "12px",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "gutter": "32px",
-                    "section-gap": "160px",
-                    "margin-mobile": "24px",
-                    "margin-desktop": "80px",
-                    "stack-md": "16px",
-                    "stack-sm": "8px",
-                    "stack-lg": "32px"
-            },
-            "fontFamily": {
-                    "body-lg": ["Be Vietnam Pro"],
-                    "label-ui": ["Space Grotesk"],
-                    "headline-xl-mobile": ["EB Garamond"],
-                    "headline-md": ["EB Garamond"],
-                    "headline-lg": ["EB Garamond"],
-                    "body-md": ["Be Vietnam Pro"],
-                    "label-caps": ["Space Grotesk"],
-                    "headline-xl": ["EB Garamond"]
-            },
-            "fontSize": {
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "label-ui": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
-                    "headline-xl-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
-                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                    "headline-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.02em", "fontWeight": "500"}]
-            }
-          },
-        },
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | OrdiRodi</title>
+    <meta name="description" content="Sélection de projets web néo-brutalistes par OrdiRodi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260507-iframe-previews">
+    <style>
+      .neo-brutal-card {
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+        border: 3px solid #000000;
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .neo-brutal-card {
-            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
-            border: 3px solid #000000;
-        }
-        .neo-brutal-card:hover {
-            transform: translate(-4px, -4px);
-            box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
-        }
-        .view-link {
-            opacity: 0.8;
-            transition: opacity 0.2s ease;
-        }
-        .view-link:hover {
-            opacity: 1;
-            text-decoration: underline;
-        }
+      .neo-brutal-card:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
+      }
+      .portfolio-image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .portfolio-image-card {
+        display: flex;
+        flex-direction: column;
+      }
+      .portfolio-image-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-bottom: 3px solid #000000;
+      }
+      .portfolio-image-card-content {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .portfolio-image-card h3 {
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+      }
+      .portfolio-image-card .category {
+        font-size: 0.875rem;
+        color: #4c4546;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+      }
+      .portfolio-image-card p {
+        font-size: 0.875rem;
+        color: #4c4546;
+        margin-bottom: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .portfolio-image-card a {
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.875rem;
+        font-weight: bold;
+        color: #000000;
+        opacity: 0.6;
+        transition: opacity 0.2s ease;
+        text-decoration: none;
+      }
+      .portfolio-image-card a:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body class="bg-[#f0f4f8] text-on-background font-body-md overflow-x-hidden">
-<!-- TopNavBar from COMPONENTS_5 -->
-<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 bg-secondary dark:bg-secondary border-b border-primary dark:border-on-secondary-fixed-variant">
-<div class="font-label-ui text-headline-md font-black tracking-tighter text-primary dark:text-on-secondary-fixed">
-        ORDIRODI
-    </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-label-caps text-label-caps text-primary dark:text-on-secondary-fixed border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-on-secondary-fixed transition-colors duration-200" href="#">Portfolio</a>
-<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant dark:text-on-secondary-fixed opacity-80 hover:text-primary dark:hover:text-on-secondary-fixed transition-colors duration-200" href="#">Process</a>
-<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant dark:text-on-secondary-fixed opacity-80 hover:text-primary dark:hover:text-on-secondary-fixed transition-colors duration-200" href="#">Contact</a>
-</div>
-<button class="md:hidden">
-<span class="material-symbols-outlined text-primary">menu</span>
-</button>
-</nav>
-<main class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-16">
-<!-- Grid section following IMAGE_2 style -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Plomberie Pro -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="Plomberie Pro" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERfv65O9WD1lszSK3nI8y9RxsfPLv3NNa_DpKYAPoehDkouX9p6V-D-bKiS5z3uvZY7N6xU93JVlnPy96ssBrRmLubHw76rnbTQepRFUqE-jcTyCe2lEqu8ybmHquh6cYg3N39Al7NVX2GbGGi837TrXU_TdprasrH3EVd_zs0nA052AMvxH8BYGx6BGu5XfvK4hUsi0C_t9p-7YfGBoIb92yYo7o4KrONTFkrLI_Mb9ijx0f9JRwdbcXJXBANoI_ohx--D0e9KM"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">Plomberie Pro</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Service de plomberie professionnel avec une interface moderne et fiable.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-<!-- Prestige Immobilier -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="Prestige Immobilier" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-eVXRuKVy6jTUW5ZOJN6cTQRx91O_qyHCCIe_J-l-YYeIfnMTTvtwsqWQ7YgbQzSk9bMmhriUalqC7-wk_LVv5llmvLtXtjWIo6j9w8W8SG1p60RDdxLi1SRqppi6wRebta38plcD8N_WaJ_YQCn5is3wpAG1M5zk4hREUkwnXBdJKVPOn7Z49kmBPpPNLpQoxkmQAm2ii1WdNsEi5rKLv9g6t5nMBF6Q2bOypKfzTKodLFaqmZ1hkcpBIEfowHvNoc1Aben9reQ"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">Prestige Immobilier</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Une vitrine sophistiquée pour l'immobilier de luxe.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-<!-- L'Atelier du Bois -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="L'Atelier du Bois" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcJof2rGe1B8RTn3523E3T_oCDeEFo621rNF7RzyTzNKNf6SUgON4rp3pHlF-v4uM8OzEh-kP9Abz8ixkEuqECK5HvhTO_poZmrsV6Vm3_Oh6e0MyDPbmyL-4OA0mSt8w2QhaQfLi8C4dq51jIHXyPr5hRGc2Xwl_eUFVPvf5aBOvxpXtFbUkedmwe37L-xwvm16U2eMPsIMmGhQrAig-b56B9UV2OBzjYWNbbSOKbuD6dnBecMuyIPWghUWTtJ_bg7bhj02vEmVA"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">L'Atelier du Bois</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Design artisanal mettant en valeur le travail du bois.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-<!-- Vert Horizon -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="Vert Horizon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD30a8Ia4g2eJ84ZIkVg7fCIf-wA-xWnecDpfjo3f9fg85rowoAgO4bk2sCH1FsiwmR18siZrPatPy0ubq3FRerGP9DDoHaRtH_twlu64h6grhPOn1dPB3FkAoGu3doKthxcX8UNnckAaYZKY8kebwbLmwD5W73iuA0FnZRSvn528uD8_5OAHXFiZqPEtqj0dklxTE2N3wK7vCngTjBW5xhwqRAvLN2_HMg2_7Wo9g9GNnlsEqPZc6diCZZ9soQ4dJmA3b48vTDM9I"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">Vert Horizon</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Un site aéré pour des services d'aménagement paysager.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-<!-- Pneu Expert -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="Pneu Expert" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsi7Y6u702ecnF0jX6WFrbjOCsTDO9Q19bVhrili1Y13ybzb_hBoECv-usS4CE78-UCg5SeKqCZ2WJh4zakB_CqiGMMWMNdJ0k1tNGa7UNhJN58wluHODHZdNyxydQLsSJ4HXgF-vO9blHzZNmkG1B-DYgQDXdzNRceFyMi4qlJiPeBdScHzXW8izU564srpzz-fbh48g-iE5dGth6NhtGufudN02kM7yC1W80T68d-ThJvYq_G2sn1z5cNd3RzUZen_rYtRTR5uI"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">Pneu Expert</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">E-commerce automobile haute performance et contrasté.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-<!-- Studio Lumina -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="Studio Lumina" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYaiIM-Qv7ZXRA5wNFDiGVIqiWHiomw__vbBdysFfTG_TDQpP1AMbGlvUFYtCrBbbjoxPBDuXJdwMLsugkmZqJmG78tQsFO6VmJ3l4hFszYiX_4Ii00LfHA-ToHLHe4tJmggBPVrHva1r3WkZNKC_qVmifBWApd_qm902FEL7pc5PcPeAsqJWdEWrbw0z_xO_wKNmPhwa9dkadWdoAPPWOA-u99esvsXKrajcYDpBstQc2HVFadRJ8e4ydzYvKjD8cMC7t0Qm0jc8"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">Studio Lumina</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Portfolio minimaliste pour photographie de studio artistique.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-<!-- Pulse Fitness -->
-<div class="neo-brutal-card bg-white rounded-none overflow-hidden flex flex-col lg:col-span-1">
-<div class="aspect-[4/3] overflow-hidden border-b border-surface-container border-b-2 border-primary">
-<img alt="Pulse Fitness" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFk8MNx0JKU-VGIRqwtMkYepCc89x7wjUMJwTlgI0oWYCKSdlV1KgvWZHMNDuA-1RS0dtoVc6PygrdWl6dXmZ0MPlZ0NQH13gSy9VNEJiI3I70a6xjDihGw4gQSy29gKaiEHdv7CFbJdgDT3svhJltL9TkersoPBr6nf4Iutini3xyI3eJ3vhruY79p605fCVGGIKn80FgIF_dchzS1yIOGy5E2XJbRHiylxCDJ5_5g3mnN4Zgy5_v0Yr3n2uLZbAe0fxqiuZR6LI"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<h3 class="font-bold text-xl mb-1">Pulse Fitness</h3>
-<p class="text-sm text-on-surface-variant font-medium mb-3">Sites Internet</p>
-<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Une marque de fitness dynamique à haute énergie.</p>
-<a class="view-link mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary opacity-60 hover:opacity-100 transition-opacity" href="#">
-                    VOIR LE SITE <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Simplified CTA Section -->
-<section class="mt-24 py-16 px-margin-mobile text-center bg-white border-[3px] border-primary shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-<h2 class="font-headline-lg text-headline-lg uppercase mb-4">
-            Besoin d'un coup de boost numérique?
-        </h2>
-<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
-            Arrêtez de vous fondre dans le web générique. Construisons quelque chose dont les gens se souviennent.
-        </p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="inline-block bg-primary text-on-primary font-label-caps text-label-caps px-8 py-4 rounded hover:bg-opacity-90 transition-all" href="#">
-                DÉMARRER UN PROJET
-            </a>
-<a class="inline-block bg-transparent text-primary border border-primary font-label-caps text-label-caps px-8 py-4 rounded hover:bg-surface-container transition-all" href="#">
-                VOIR LE PROCESSUS
-            </a>
-</div>
-</section>
-</main>
-<!-- Footer from COMPONENTS_5 -->
-<footer class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-stack-lg gap-stack-md bg-primary dark:bg-primary-container text-surface dark:text-on-primary-container">
-<div class="flex items-center gap-8">
-<div class="font-label-ui text-xl font-bold text-surface dark:text-on-primary-container">ORDIRODI</div>
-<div class="hidden md:flex gap-6">
-<a class="font-label-caps text-label-caps text-secondary dark:text-secondary-fixed hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Portfolio</a>
-<a class="font-label-caps text-label-caps text-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Process</a>
-<a class="font-label-caps text-label-caps text-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Contact</a>
-<a class="font-label-caps text-label-caps text-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Conditions</a>
-</div>
-</div>
-<div class="font-label-caps text-label-caps opacity-60">
-        © 2026 ORDIRODI. ON MODERNISE LE WEB, UN PIXEL À LA FOIS.
-    </div>
-</footer>
-</body></html>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="brand" href="/">OrdiRodi</a>
+      <div class="nav-links">
+        <a class="active" href="/portfolio">Portfolio</a>
+        <a href="/quote">Contact</a>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="wrap">
+        <span class="eyebrow tilt-left">Portfolio</span>
+        <h1 class="page-title">Projets<br>choisis.</h1>
+        <p class="lead">Nos derniers projets de web design au style néo-brutaliste.</p>
+
+        <section class="portfolio-image-grid" aria-label="Sites web realises">
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="Plomberie Pro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERfv65O9WD1lszSK3nI8y9RxsfPLv3NNa_DpKYAPoehDkouX9p6V-D-bKiS5z3uvZY7N6xU93JVlnPy96ssBrRmLubHw76rnbTQepRFUqE-jcTyCe2lEqu8ybmHquh6cYg3N39Al7NVX2GbGGi837TrXU_TdprasrH3EVd_zs0nA052AMvxH8BYGx6BGu5XfvK4hUsi0C_t9p-7YfGBoIb92yYo7o4KrONTFkrLI_Mb9ijx0f9JRwdbcXJXBANoI_ohx--D0e9KM"/>
+            <div class="portfolio-image-card-content">
+              <h3>Plomberie Pro</h3>
+              <p class="category">Sites Internet</p>
+              <p>Service de plomberie professionnel avec une interface moderne et fiable.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="Prestige Immobilier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-eVXRuKVy6jTUW5ZOJN6cTQRx91O_qyHCCIe_J-l-YYeIfnMTTvtwsqWQ7YgbQzSk9bMmhriUalqC7-wk_LVv5llmvLtXtjWIo6j9w8W8SG1p60RDdxLi1SRqppi6wRebta38plcD8N_WaJ_YQCn5is3wpAG1M5zk4hREUkwnXBdJKVPOn7Z49kmBPpPNLpQoxkmQAm2ii1WdNsEi5rKLv9g6t5nMBF6Q2bOypKfzTKodLFaqmZ1hkcpBIEfowHvNoc1Aben9reQ"/>
+            <div class="portfolio-image-card-content">
+              <h3>Prestige Immobilier</h3>
+              <p class="category">Sites Internet</p>
+              <p>Une vitrine sophistiquée pour l'immobilier de luxe.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="L'Atelier du Bois" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcJof2rGe1B8RTn3523E3T_oCDeEFo621rNF7RzyTzNKNf6SUgON4rp3pHlF-v4uM8OzEh-kP9Abz8ixkEuqECK5HvhTO_poZmrsV6Vm3_Oh6e0MyDPbmyL-4OA0mSt8w2QhaQfLi8C4dq51jIHXyPr5hRGc2Xwl_eUFVPvf5aBOvxpXtFbUkedmwe37L-xwvm16U2eMPsIMmGhQrAig-b56B9UV2OBzjYWNbbSOKbuD6dnBecMuyIPWghUWTtJ_bg7bhj02vEmVA"/>
+            <div class="portfolio-image-card-content">
+              <h3>L'Atelier du Bois</h3>
+              <p class="category">Sites Internet</p>
+              <p>Design artisanal mettant en valeur le travail du bois.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="Vert Horizon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD30a8Ia4g2eJ84ZIkVg7fCIf-wA-xWnecDpfjo3f9fg85rowoAgO4bk2sCH1FsiwmR18siZrPatPy0ubq3FRerGP9DDoHaRtH_twlu64h6grhPOn1dPB3FkAoGu3doKthxcX8UNnckAaYZKY8kebwbLmwD5W73iuA0FnZRSvn528uD8_5OAHXFiZqPEtqj0dklxTE2N3wK7vCngTjBW5xhwqRAvLN2_HMg2_7Wo9g9GNnlsEqPZc6diCZZ9soQ4dJmA3b48vTDM9I"/>
+            <div class="portfolio-image-card-content">
+              <h3>Vert Horizon</h3>
+              <p class="category">Sites Internet</p>
+              <p>Un site aéré pour des services d'aménagement paysager.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="Pneu Expert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsi7Y6u702ecnF0jX6WFrbjOCsTDO9Q19bVhrili1Y13ybzb_hBoECv-usS4CE78-UCg5SeKqCZ2WJh4zakB_CqiGMMWMNdJ0k1tNGa7UNhJN58wluHODHZdNyxydQLsSJ4HXgF-vO9blHzZNmkG1B-DYgQDXdzNRceFyMi4qlJiPeBdScHzXW8izU564srpzz-fbh48g-iE5dGth6NhtGufudN02kM7yC1W80T68d-ThJvYq_G2sn1z5cNd3RzUZen_rYtRTR5uI"/>
+            <div class="portfolio-image-card-content">
+              <h3>Pneu Expert</h3>
+              <p class="category">Sites Internet</p>
+              <p>E-commerce automobile haute performance et contrasté.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="Studio Lumina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYaiIM-Qv7ZXRA5wNFDiGVIqiWHiomw__vbBdysFfTG_TDQpP1AMbGlvUFYtCrBbbjoxPBDuXJdwMLsugkmZqJmG78tQsFO6VmJ3l4hFszYiX_4Ii00LfHA-ToHLHe4tJmggBPVrHva1r3WkZNKC_qVmifBWApd_qm902FEL7pc5PcPeAsqJWdEWrbw0z_xO_wKNmPhwa9dkadWdoAPPWOA-u99esvsXKrajcYDpBstQc2HVFadRJ8e4ydzYvKjD8cMC7t0Qm0jc8"/>
+            <div class="portfolio-image-card-content">
+              <h3>Studio Lumina</h3>
+              <p class="category">Sites Internet</p>
+              <p>Portfolio minimaliste pour photographie de studio artistique.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+
+          <div class="neo-brutal-card bg-white portfolio-image-card">
+            <img alt="Pulse Fitness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFk8MNx0JKU-VGIRqwtMkYepCc89x7wjUMJwTlgI0oWYCKSdlV1KgvWZHMNDuA-1RS0dtoVc6PygrdWl6dXmZ0MPlZ0NQH13gSy9VNEJiI3I70a6xjDihGw4gQSy29gKaiEHdv7CFbJdgDT3svhJltL9TkersoPBr6nf4Iutini3xyI3eJ3vhruY79p605fCVGGIKn80FgIF_dchzS1yIOGy5E2XJbRHiylxCDJ5_5g3mnN4Zgy5_v0Yr3n2uLZbAe0fxqiuZR6LI"/>
+            <div class="portfolio-image-card-content">
+              <h3>Pulse Fitness</h3>
+              <p class="category">Sites Internet</p>
+              <p>Une marque de fitness dynamique à haute énergie.</p>
+              <a href="#">VOIR LE SITE <span class="material-symbols-outlined">north_east</span></a>
+            </div>
+          </div>
+      </div>
+    </main>
+
+    <section class="section cta-band">
+      <div class="wrap">
+        <h2 class="section-title">Besoin d'un coup de boost numérique?</h2>
+        <p class="section-lede center">Arrêtez de vous fondre dans le web générique. Construisons quelque chose dont les gens se souviennent.</p>
+        <div class="actions center-actions">
+          <a class="button secondary" href="/quote">Démarrer un projet</a>
+          <a class="button" href="/process">Voir le processus</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a class="brand" href="/">OrdiRodi</a>
+      <div class="footer-links">
+        <a class="active" href="/portfolio">Portfolio</a>
+        <a href="/process">Processus</a>
+        <a href="/quote">Contact</a>
+        <a href="terms.html">Conditions</a>
+      </div>
+      <div class="copyright">© 2026 OrdiRodi. On modernise le web, un pixel à la fois.</div>
+    </footer>
+  </body>
+</html>
