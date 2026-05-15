@@ -64,6 +64,13 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.nav-branding {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -80,11 +87,12 @@ textarea {
 }
 
 .tagline {
-  font-size: 1rem;
-  font-weight: 400;
   font-style: normal;
-  text-transform: none;
-  margin-left: 8px;
+  color: #000;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
 .nav-links {
@@ -1116,6 +1124,10 @@ textarea {
     flex-wrap: wrap;
   }
 
+  .nav-branding {
+    flex-wrap: wrap;
+  }
+
   .nav-links {
     order: 3;
     width: 100%;
@@ -1206,6 +1218,11 @@ textarea {
 
   .brand {
     font-size: 1.1rem;
+  }
+
+  .tagline {
+    max-width: 190px;
+    font-size: 0.82rem;
   }
 
   .nav-cta {
