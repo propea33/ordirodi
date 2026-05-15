@@ -17,8 +17,18 @@
       "permanent": true
     },
     {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
       "source": "/quote.html",
-      "destination": "/quote",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/quote",
+      "destination": "/contact",
       "permanent": true
     },
     {

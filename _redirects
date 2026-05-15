@@ -1,7 +1,8 @@
 /index.html / 301!
 /portfolio.html /portfolio 301!
 /process.html /process 301!
-/quote.html /quote 301!
+/contact.html /contact 301!
+/quote.html /contact 301!
 /merci.html /merci 301!
 /sites/immobilier.html /sites/immobilier 301!
 /sites/plomberie.html /sites/plomberie 301!
@@ -11,7 +12,8 @@
 
 /portfolio /portfolio.html 200
 /process /process.html 200
-/quote /quote.html 200
+/contact /contact.html 200
+/quote /contact 301!
 /merci /merci.html 200
 /sites/immobilier /sites/immobilier.html 200
 /sites/plomberie /sites/plomberie.html 200
