@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Devis | OrdiRodi</title>
+    <meta name="description" content="Demandez un audit ou un devis pour votre projet web avec OrdiRodi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260507-iframe-previews">
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="brand" href="/">OrdiRodi</a>
+      <div class="nav-links">
+        <a href="/portfolio">Portfolio</a>
+        <a class="active" href="/contact">Contact</a>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="wrap">
+        <header class="center quote-header">
+          <span class="eyebrow blue tilt-left">Prêt pour l'Upgrade?</span>
+          <h1 class="page-title">Lancez votre <span class="orange-word">projet</span></h1>
+          <p class="lead center-lead">On ne fait pas que du web. On construit des expériences numériques avec une dose de nostalgie et beaucoup de performance.</p>
+        </header>
+
+        <div class="quote-grid">
+          <section class="quote-panel" aria-labelledby="quote-title">
+            <h2 id="quote-title" class="card-title"><span class="material-symbols-outlined">edit_note</span> Détails du devis</h2>
+            <form class="form-grid" action="https://formsubmit.co/info@ordirodi.com" method="post">
+              <input type="hidden" name="_subject" value="Nouvelle demande depuis OrdiRodi">
+              <input type="hidden" name="_next" value="https://ordirodi.com/merci">
+              <input type="hidden" name="_template" value="table">
+              <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+              <div class="field">
+                <label for="name">Nom complet</label>
+                <input id="name" name="nom" type="text" placeholder="Votre nom" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Courriel</label>
+                <input id="email" name="email" type="email" placeholder="bonjour@ordirodi.com" autocomplete="email" required>
+              </div>
+              <div class="field full">
+                <label for="url">Adresse de votre site actuel</label>
+                <input id="url" name="site_actuel" type="url" placeholder="https://votre-site.com" inputmode="url">
+              </div>
+              <div class="field full">
+                <label for="project-type">Type de projet</label>
+                <select id="project-type" name="type_de_projet" required>
+                  <option>Refonte complete</option>
+                  <option>Nouveau produit minimum viable</option>
+                  <option>E-commerce</option>
+                  <option>Consultation UX</option>
+                </select>
+              </div>
+              <fieldset class="radio-group">
+                <legend>Budget estime</legend>
+                <div class="budget-options">
+                  <label><input name="budget" type="radio" value="5-10" required><span>5k - 10k</span></label>
+                  <label><input name="budget" type="radio" value="10-25"><span>10k - 25k</span></label>
+                  <label><input name="budget" type="radio" value="25-plus"><span>25k+</span></label>
+                </div>
+              </fieldset>
+              <div class="field full">
+                <label for="message">Message / résumé du projet</label>
+                <textarea id="message" name="message" rows="5" placeholder="Dites-nous tout..." required></textarea>
+              </div>
+              <button class="button secondary field full" type="submit">Envoyer le Signal</button>
+            </form>
+          </section>
+
+          <aside class="side-stack">
+            <section class="why-card tilt-right">
+              <h2 class="card-title">Pourquoi nous?</h2>
+              <ul class="why-list">
+                <li>
+                  <span class="material-symbols-outlined">bolt</span>
+                  <div><strong>Vitesse au pixel près</strong><br>On optimise chaque milliseconde. Pas de ralentissement, juste une navigation fluide.</div>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">videogame_asset</span>
+                  <div><strong>Culture geek ancrée</strong><br>On comprend vos références et on les transforme en interfaces solides.</div>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">shield</span>
+                  <div><strong>Architecture Robuste</strong><br>Code propre, securise et pret pour la montee en charge.</div>
+                </li>
+              </ul>
+            </section>
+            <section class="direct-card">
+              <h2 class="card-title">Ligne directe</h2>
+              <p>Pas envie de remplir un formulaire? Discutez avec un humain.</p>
+              <p><strong>contact@ordirodi.com</strong></p>
+              <p><strong>(514) 555-GEEK</strong></p>
+            </section>
+            <div class="framed shadow-lg-only">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Poste de travail moderne avec ordinateur portable">
+            </div>
+          </aside>
+        </div>
+
+        <section class="section compact-bottom">
+          <div class="center">
+            <h2 class="section-title">Questions Frequentes</h2>
+          </div>
+          <div class="faq-grid">
+            <article class="faq-card">
+              <h3>Combien de temps?</h3>
+              <p>Un site standard prend 4 a 6 semaines. On avance vite, mais proprement.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Référencement inclus?</h3>
+              <p>Oui. Un site invisible est un site inutile, donc la structure de référencement commence dès le jour 1.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Support tech?</h3>
+              <p>Maintenance, mises a jour et correctifs peuvent etre prevus selon le besoin.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="/">OrdiRodi</a>
+      <div class="footer-links">
+        <a href="/portfolio">Portfolio</a>
+        <a href="/process">Processus</a>
+        <a class="active" href="/contact">Contact</a>
+        <a href="/terms.html">Conditions</a>
+      </div>
+      <div class="copyright">© 2026 OrdiRodi. On modernise le web, un pixel à la fois.</div>
+    </footer>
+  </body>
+</html>
