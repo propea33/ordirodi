@@ -1,3 +1,9 @@
+/portfolio
+  Cache-Control: no-cache, must-revalidate
+
+/portfolio.html
+  Cache-Control: no-cache, must-revalidate
+
 /styles.css
   Cache-Control: public, max-age=300, must-revalidate
 
