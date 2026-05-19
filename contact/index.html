@@ -30,71 +30,55 @@
 
         <div class="quote-grid">
           <section class="quote-panel" aria-labelledby="quote-title">
-            <h2 id="quote-title" class="card-title"><span class="material-symbols-outlined">edit_note</span> Détails du devis</h2>
-           <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <h2 id="quote-title" class="card-title">
+              <span class="material-symbols-outlined">edit_note</span>
+              Détails du devis
+            </h2>
 
-  <!-- Web3Forms Access Key -->
-  <input type="hidden" name="access_key" value="ae6449b6-fd65-46b1-b561-95e47405abfb">
+            <form class="form-grid" action="https://api.web3forms.com/submit" method="POST">
 
-  <!-- Nom -->
-  <div class="form-group">
-    <label for="name">Nom complet</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Votre nom"
-      required
-    >
-  </div>
+              <input type="hidden" name="access_key" value="ae6449b6-fd65-46b1-b561-95e47405abfb">
 
-  <!-- Courriel -->
-  <div class="form-group">
-    <label for="email">Courriel</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="[email protected]"
-      required
-    >
-  </div>
+              <div class="field">
+                <label for="name">Nom complet</label>
+                <input 
+                  id="name"
+                  type="text" 
+                  name="name" 
+                  placeholder="Votre nom"
+                  autocomplete="name"
+                  required
+                >
+              </div>
 
-  <!-- Site web -->
-  <div class="form-group">
-    <label for="website">Adresse de votre site actuel</label>
-    <input
-      type="text"
-      id="website"
-      name="website"
-      placeholder="https://"
-    >
-  </div>
+              <div class="field">
+                <label for="email">Courriel</label>
+                <input 
+                  id="email"
+                  type="email" 
+                  name="email" 
+                  placeholder="bonjour@ordirodi.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
 
-  <!-- Type de projet -->
-  <div class="form-group">
-    <label for="project_type">Type de projet</label>
-    <select id="project_type" name="project_type" required>
-      <option value="">Choisir</option>
-      <option value="Refonte complete">Refonte complète</option>
-      <option value="Nouveau produit minimum viable">Nouveau produit minimum viable</option>
-      <option value="E-commerce">E-commerce</option>
-      <option value="Consultation UX">Consultation UX</option>
-    </select>
-  </div>
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea 
+                  id="message"
+                  name="message" 
+                  rows="5"
+                  placeholder="Votre message"
+                  required
+                ></textarea>
+              </div>
 
-  <!-- Budget -->
-  <div class="form-group">
-    <label for="budget">Budget estimé</label>
-    <select id="budget" name="budget" required>
-      <option value="">Choisir</option>
-      <option value="5k - 10k">5k - 10k</option>
-      <option value="10k - 25k">10k - 25k</option>
-      <option value="25k+">25k+</option>
-    </select>
-  </div>
+              <button class="button secondary field full" type="submit">
+                Envoyer
+              </button>
 
-</form>
+            </form>
           </section>
 
           <aside class="side-stack">
@@ -115,12 +99,14 @@
                 </li>
               </ul>
             </section>
+
             <section class="direct-card">
               <h2 class="card-title">Ligne directe</h2>
               <p>Pas envie de remplir un formulaire? Discutez avec un humain.</p>
               <p><strong>contact@ordirodi.com</strong></p>
               <p><strong>(514) 555-GEEK</strong></p>
             </section>
+
             <div class="framed shadow-lg-only">
               <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Poste de travail moderne avec ordinateur portable">
             </div>
@@ -131,15 +117,18 @@
           <div class="center">
             <h2 class="section-title">Questions Frequentes</h2>
           </div>
+
           <div class="faq-grid">
             <article class="faq-card">
               <h3>Combien de temps?</h3>
               <p>Un site standard prend 4 a 6 semaines. On avance vite, mais proprement.</p>
             </article>
+
             <article class="faq-card">
               <h3>Référencement inclus?</h3>
               <p>Oui. Un site invisible est un site inutile, donc la structure de référencement commence dès le jour 1.</p>
             </article>
+
             <article class="faq-card">
               <h3>Support tech?</h3>
               <p>Maintenance, mises a jour et correctifs peuvent etre prevus selon le besoin.</p>
