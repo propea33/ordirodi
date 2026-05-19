@@ -30,46 +30,12 @@
 
         <div class="quote-grid">
           <section class="quote-panel" aria-labelledby="quote-title">
-            <h2 id="quote-title" class="card-title"><span class="material-symbols-outlined">edit_note</span> Détails du devis</h2>
-            <form class="form-grid" action="https://formsubmit.co/info@ordirodi.com" method="post">
-              <input type="hidden" name="_subject" value="Nouvelle demande depuis OrdiRodi">
-              <input type="hidden" name="_next" value="https://ordirodi.com/merci">
-              <input type="hidden" name="_template" value="table">
-              <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
-              <div class="field">
-                <label for="name">Nom complet</label>
-                <input id="name" name="nom" type="text" placeholder="Votre nom" autocomplete="name" required>
-              </div>
-              <div class="field">
-                <label for="email">Courriel</label>
-                <input id="email" name="email" type="email" placeholder="bonjour@ordirodi.com" autocomplete="email" required>
-              </div>
-              <div class="field full">
-                <label for="url">Adresse de votre site actuel</label>
-                <input id="url" name="site_actuel" type="url" placeholder="https://votre-site.com" inputmode="url">
-              </div>
-              <div class="field full">
-                <label for="project-type">Type de projet</label>
-                <select id="project-type" name="type_de_projet" required>
-                  <option>Refonte complete</option>
-                  <option>Nouveau produit minimum viable</option>
-                  <option>E-commerce</option>
-                  <option>Consultation UX</option>
-                </select>
-              </div>
-              <fieldset class="radio-group">
-                <legend>Budget estime</legend>
-                <div class="budget-options">
-                  <label><input name="budget" type="radio" value="5-10" required><span>5k - 10k</span></label>
-                  <label><input name="budget" type="radio" value="10-25"><span>10k - 25k</span></label>
-                  <label><input name="budget" type="radio" value="25-plus"><span>25k+</span></label>
-                </div>
-              </fieldset>
-              <div class="field full">
-                <label for="message">Message / résumé du projet</label>
-                <textarea id="message" name="message" rows="5" placeholder="Dites-nous tout..." required></textarea>
-              </div>
-              <button class="button secondary field full" type="submit">Envoyer le Signal</button>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="ae6449b6-fd65-46b1-b561-95e47405abfb">
+              <input type="text" name="name" required>
+              <input type="email" name="email" required>
+              <textarea name="message" required></textarea>
+              <button type="submit">Submit Form</button>
             </form>
           </section>
 
