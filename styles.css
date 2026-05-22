@@ -432,6 +432,34 @@ textarea {
   text-transform: uppercase;
 }
 
+.portfolio-strip {
+  padding-top: 72px;
+}
+
+.portfolio-strip .section-title {
+  margin-bottom: 28px;
+}
+
+.portfolio-marquee {
+  white-space: normal;
+}
+
+.portfolio-track {
+  gap: 22px;
+  padding: 26px 22px;
+  animation-duration: 34s;
+}
+
+.portfolio-track img {
+  width: clamp(220px, 28vw, 420px);
+  aspect-ratio: 16 / 10;
+  flex: 0 0 auto;
+  border: 4px solid #000;
+  box-shadow: var(--shadow);
+  background: var(--white);
+  object-fit: cover;
+}
+
 @keyframes marquee {
   to {
     transform: translateX(-50%);
