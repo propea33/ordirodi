@@ -1,7 +1,16 @@
+/
+  Cache-Control: no-cache, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, must-revalidate
+
 /portfolio
   Cache-Control: no-cache, must-revalidate
 
 /portfolio.html
+  Cache-Control: no-cache, must-revalidate
+
+/favicon.ico
   Cache-Control: no-cache, must-revalidate
 
 /styles.css
