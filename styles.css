@@ -488,6 +488,28 @@ textarea {
   object-fit: cover;
 }
 
+.process-list {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding-left: 22px;
+}
+
+.process-list li {
+  padding-left: 4px;
+}
+
+.process-list strong,
+.process-list span {
+  display: block;
+}
+
+.process-list strong {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .cta-band {
   border-block: 4px solid #000;
   background: var(--yellow);
